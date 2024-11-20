@@ -1,0 +1,1 @@
+<view class="flex flex-col data-v-b49328e8"><view class="text-center data-v-b49328e8">我是分包B的H页面</view><button class="mt-20rpx data-v-b49328e8" type="primary" data-event-opts="{{[['tap',[['goToIndex',['$event']]]]]}}" bindtap="__e">点我reLaunch到首页</button></view>

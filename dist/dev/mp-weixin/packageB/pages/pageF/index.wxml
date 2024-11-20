@@ -1,0 +1,1 @@
+<view class="flex flex-col data-v-7bed060a"><view class="text-center data-v-7bed060a">我是分包B的F页面</view><button class="mt-20rpx data-v-7bed060a" type="primary" data-event-opts="{{[['tap',[['goToG',['$event']]]]]}}" bindtap="__e">点我跳转到G页面</button></view>

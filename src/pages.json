@@ -1,0 +1,92 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	],
+  // 分包加载配置，此配置为小程序的分包加载机制，从uni-app 2.7.12+ 开始，也兼容了小程序的分包配置。其目的不用于下载提速，而用于首页是vue时的启动提速
+  "subPackages": [
+    // 分包A
+    {
+      "root": "packageA",
+      "pages": [
+        // A页面
+        {
+          "path": "pages/pageA/index",
+          "style": {
+            "navigationBarTitleText": "A页面",
+            "componentPlaceholder": {
+              "my-component": "view"
+            }
+          }
+        },
+        // B页面
+        {
+          "path": "pages/pageB/index",
+          "style": {
+            "navigationBarTitleText": "B页面"
+          }
+        }
+      ]
+    },
+    // 分包B
+    {
+      "root": "packageB",
+      "pages": [
+        {
+          "path": "pages/pageC/index",
+          "style": {
+            "navigationBarTitleText": "C页面"
+          }
+        },
+        {
+          "path": "pages/pageD/index",
+          "style": {
+            "navigationBarTitleText": "D页面"
+          }
+        },
+        {
+        	"path" : "pages/pageE/index",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+        		"enablePullDownRefresh" : false
+        	}
+        },
+        {
+        	"path" : "pages/pageF/index",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+        		"enablePullDownRefresh" : false
+        	}
+        },
+        {
+        	"path" : "pages/pageG/index",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+        		"enablePullDownRefresh" : false
+        	}
+        },
+        {
+        	"path" : "pages/pageH/index",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+        		"enablePullDownRefresh" : false
+        	}
+        }
+      ]
+    }
+  ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

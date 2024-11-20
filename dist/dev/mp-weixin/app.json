@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subPackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/pageA/index",
+        "pages/pageB/index"
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages": [
+        "pages/pageC/index",
+        "pages/pageD/index",
+        "pages/pageE/index",
+        "pages/pageF/index",
+        "pages/pageG/index",
+        "pages/pageH/index"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}
