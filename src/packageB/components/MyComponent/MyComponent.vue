@@ -8,9 +8,6 @@ export default {
       X: 1
     }
   },
-  methods: {
-
-  },
 }
 </script>
 <style lang='scss' scoped>
