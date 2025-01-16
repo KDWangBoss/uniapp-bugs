@@ -10,10 +10,12 @@
 </template>
 <script>
 import MyComponent from '@/packageB/components/MyComponent/MyComponent.vue'
+import packageBComponentA from '@/packageB/components/packageBComponentA/packageBComponentA.vue'
 
 export default {
   components: {
-    MyComponent
+    MyComponent,
+    packageBComponentA
   },
   data  () {
     return {
@@ -26,7 +28,6 @@ export default {
   },
   onUnload() {
     console.log('%c 分包A页面onUnload', 'color: red;')
-    // uni.$off('onMyComponentMounted', this.onMyComponentMounted)
   },
   async onLoad() {
     await this.isComponentLoaded()
@@ -59,9 +60,6 @@ export default {
       uni.reLaunch({
         url: '/pages/index/index'
       })
-    },
-    onMyComponentMounted(e) {
-      console.error('打印了组件里面的值：', e)
     },
     isComponentLoaded() {
       return new Promise((resolve, reject) => {

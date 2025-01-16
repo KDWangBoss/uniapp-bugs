@@ -19,7 +19,8 @@
           "style": {
             "navigationBarTitleText": "A页面",
             "componentPlaceholder": {
-              "my-component": "view"
+              "my-component": "view",
+              "package-b-component-a": "view"
             }
           }
         },

@@ -1,9 +1,11 @@
 {
   "navigationBarTitleText": "A页面",
   "componentPlaceholder": {
-    "my-component": "view"
+    "my-component": "view",
+    "package-b-component-a": "view"
   },
   "usingComponents": {
-    "my-component": "/packageB/components/MyComponent/MyComponent"
+    "my-component": "/packageB/components/MyComponent/MyComponent",
+    "package-b-component-a": "/packageB/components/packageBComponentA/packageBComponentA"
   }
 }

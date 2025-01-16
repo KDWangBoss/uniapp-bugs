@@ -143,9 +143,15 @@ var MyComponent = function MyComponent() {
 //
 //
 //
+var packageBComponentA = function packageBComponentA() {
+  __webpack_require__.e(/*! require.ensure | packageB/components/packageBComponentA/packageBComponentA */ "packageB/components/packageBComponentA/packageBComponentA").then((function () {
+    return resolve(__webpack_require__(/*! @/packageB/components/packageBComponentA/packageBComponentA.vue */ "./src/packageB/components/packageBComponentA/packageBComponentA.vue"));
+  }).bind(null, __webpack_require__))['catch'](__webpack_require__.oe);
+};
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    MyComponent: MyComponent
+    MyComponent: MyComponent,
+    packageBComponentA: packageBComponentA
   },
   data: function data() {
     return {
@@ -158,7 +164,6 @@ var MyComponent = function MyComponent() {
   },
   onUnload: function onUnload() {
     console.log('%c 分包A页面onUnload', 'color: red;');
-    // uni.$off('onMyComponentMounted', this.onMyComponentMounted)
   },
   onLoad: function onLoad() {
     var _this = this;
@@ -202,9 +207,6 @@ var MyComponent = function MyComponent() {
       uni.reLaunch({
         url: '/pages/index/index'
       });
-    },
-    onMyComponentMounted: function onMyComponentMounted(e) {
-      console.error('打印了组件里面的值：', e);
     },
     isComponentLoaded: function isComponentLoaded() {
       var _this2 = this;
